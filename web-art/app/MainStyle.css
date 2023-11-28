@@ -7,4 +7,36 @@
 body{
     font-family: 'iransSans' !important;
     font-style: normal;
+    background: #EEE9DA !important;
 }
+
+/**==============================================
+ *                Banner 
+ *=============================================**/
+ .banner-bg{
+    background: rgba(60, 98, 85, 0.95);
+    min-height: 89vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+ }
+
+ .banner-whay{
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    right: -4%;
+    z-index: 2;
+ }
+ .banner-whay-2{
+    z-index: 1;
+    position: absolute;
+    bottom: 2%;
+    left: 0;
+    right: -4%;
+ }
+ @media only screen and (min-width: 1400px){}
+ @media only screen and (min-width: 1200px){}
+ @media only screen and (min-width: 992px){}
+ @media only screen and (min-width: 772px){}
