@@ -30,7 +30,7 @@ function Banner() {
         <div className="grid justify-center grid-cols-1 lg:grid-cols-2 mt-28">
           <div className=" m-auto ">
             <h1 className="title-banner">
-              طراحی بهترین وبسایت و نرم افزارهای تحت وب
+              طراحی بهترین <br/>وبسایت و نرم افزارهای تحت وب
             </h1>
             <span className="text-banner">
               ما به طور مداوم با جدیدترین تکنولوژی ها و روندها در زمینه طراحی و
@@ -38,10 +38,15 @@ function Banner() {
               تکنولوژی همراهی کنیم.
             </span>
           </div>
-          <div className=" ">
-            <div className="bg-slate-600 p-20"></div>
+          <div >
+            <div className="bg-banner-image">
+
+            </div>
           </div>
         </div>
+      </div>
+      <div className="mouse-motion">
+
       </div>
     </div>
   );

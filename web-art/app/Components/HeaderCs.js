@@ -1,4 +1,5 @@
-import React from "react";
+"use client"
+import React,{useState ,useEffect} from "react";
 import Link from "next/link";
 
 const HeaderCs = () => {
@@ -24,9 +25,34 @@ const HeaderCs = () => {
       link: "/",
     },
   ];
+  const [scrollPosition, setScrollPosition] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const position = window.pageYOffset;
+      setScrollPosition(position);
+      console.log(scrollPosition);
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [scrollPosition]);
+  const navStyle = {
+    width: '100%',
+    position: 'fixed',
+    zIndex: 10,
+    transition:' .3s ',
+    opacity: scrollPosition > 80 && scrollPosition < 400 ? 0 :1 ,
+    transform:scrollPosition > 80 && scrollPosition < 400 ? 'translateY(-5rem)' :'translateY(0)' ,
+    background:scrollPosition > 400?'rgba(60, 98, 85, 1)':'transparent',
+    boxShadow:scrollPosition > 400? 'rgba(0, 0, 0, 0.1) 0px 0px 20px':'none',
+  };
   return (
     <>
-      <nav className="bg-transparent dark:bg-gray-900 w-full fixed z-10">
+      <nav className="  w-full fixed z-10" style={navStyle}>
       <div className="container mx-auto">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <Link
@@ -63,15 +89,15 @@ const HeaderCs = () => {
                   gradientUnits="userSpaceOnUse"
                   gradientTransform="translate(52.3548 9.16855) rotate(99.9581) scale(55.5789 49.889)"
                 >
-                  <stop stop-color="#353E55" />
-                  <stop offset="0.0001" stop-color="#61876E" />
-                  <stop offset="0.208333" stop-color="#EAE7B1" />
-                  <stop offset="0.419546" stop-color="#61876E" />
-                  <stop offset="0.527979" stop-color="#EAE7B1" />
-                  <stop offset="0.645833" stop-color="#61876E" />
-                  <stop offset="0.75" stop-color="#EAE7B1" />
-                  <stop offset="0.859375" stop-color="#EAE7B1" />
-                  <stop offset="1" stop-color="#EAE7B1" />
+                  <stop stopColor="#353E55" />
+                  <stop offset="0.0001" stopColor="#61876E" />
+                  <stop offset="0.208333" stopColor="#EAE7B1" />
+                  <stop offset="0.419546" stopColor="#61876E" />
+                  <stop offset="0.527979" stopColor="#EAE7B1" />
+                  <stop offset="0.645833" stopColor="#61876E" />
+                  <stop offset="0.75" stopColor="#EAE7B1" />
+                  <stop offset="0.859375" stopColor="#EAE7B1" />
+                  <stop offset="1" stopColor="#EAE7B1" />
                 </radialGradient>
                 <clipPath id="clip0_138_53">
                   <rect
