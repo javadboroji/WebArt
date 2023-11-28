@@ -47,8 +47,8 @@ const HeaderCs = () => {
     transition:' .3s ',
     opacity: scrollPosition > 80 && scrollPosition < 400 ? 0 :1 ,
     transform:scrollPosition > 80 && scrollPosition < 400 ? 'translateY(-5rem)' :'translateY(0)' ,
-    background:scrollPosition > 400?'rgba(60, 98, 85, 1)':'transparent',
-    boxShadow:scrollPosition > 400? 'rgba(0, 0, 0, 0.1) 0px 0px 20px':'none',
+    background:scrollPosition > 390?'rgba(60, 98, 85, 1)':'transparent',
+    boxShadow:scrollPosition > 390? 'rgba(0, 0, 0, 0.1) 0px 0px 20px':'none',
   };
   return (
     <>
