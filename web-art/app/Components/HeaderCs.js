@@ -27,6 +27,7 @@ const HeaderCs = () => {
   return (
     <>
       <nav className="bg-transparent dark:bg-gray-900 w-full fixed z-10">
+      <div className="container mx-auto">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <Link
             href="/"
@@ -126,6 +127,7 @@ const HeaderCs = () => {
             </ul>
           </div>
         </div>
+      </div>
       </nav>
     </>
   );
