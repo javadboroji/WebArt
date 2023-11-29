@@ -8,7 +8,7 @@ import FooterLogo from "@/public/asset/image/footer-log.svg"
 import Image from "next/image";
 function FooterCs() {
   return (
-    <footer className="m-auto mt-40">
+    <footer className="m-auto mt-56 lg:mt-40  ">
      <div className="container px-4 md:px-0 max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl m-auto">
         <div className="footer-logo mt-24  ">
             <Image src={FooterLogo} alt="FooterLogo" className="mx-auto lg:mx-0" />
