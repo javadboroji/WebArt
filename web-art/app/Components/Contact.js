@@ -13,7 +13,7 @@ function Contact() {
         color:'#3C6255'
     }
   return (
-    <div className='container px-4 lg:px-0 max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl'>
+    <div className='container px-4 lg:px-0 max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl mt-14'>
         <h3 className='text-2xl md:text-4xl mb-8 text-center md:text-right' style={textColor}> ارتباط باما</h3>
         <div className=' flex flex-wrap flex-col md:flex-row  relative'>       
                 <div className='contact-cart flex order-2 mt-8 md:mt-0'>

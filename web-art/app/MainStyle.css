@@ -8,7 +8,7 @@ body{
     font-family: 'iransSans' !important;
     font-style: normal;
     background: #EEE9DA !important;
-    min-height: 150rem;
+   
 }
 
 /**==============================================
@@ -284,6 +284,132 @@ line-height: 200%; /* 48px */
    margin-right: auto;
    display: flex;
   }
+
+
+
+/**==============================================
+ *                Affter Banner
+ *  
+ *  
+ *  
+ *  
+ *=============================================**/
+.after-bg-larg{
+   width: 28rem;
+   height: 28rem;
+   background: rgba(166, 187, 141, 0.20);
+   border-radius: 50%;
+   position: relative;
+   
+}
+.after-bg-small{
+   background: rgba(202, 210, 179, 0.50);
+   width: 24rem;
+   height: 24rem;
+   border-radius: 50%;
+   position: absolute;
+   transform: translate(-50%,-50%);
+   top: 50%;
+   left: 50%;
+   
+}
+.affter-text{
+   color: #40513B;
+text-align: justify;
+font-style: normal;
+font-weight: 400;
+line-height: 200%; /* 48px */
+}
+.after-bg-larg::after{
+   content: "";
+   position: absolute;
+   bottom: 2.5%;
+   background: url(../public/asset/image/affter-Image.svg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: contain;
+   width: 100%;
+   height: 100%;
+   animation: customAni 4s ease 0s infinite normal none;
+}
+
+
+
+/**==============================================
+ *                Footer
+ *  
+ *  
+ *  
+ *  
+ *=============================================**/
+ footer{
+   background: rgba(60, 98, 85, 0.95);
+   width: 100%;
+   filter: drop-shadow(0px 3px 2px rgba(0, 0, 0, 0.10));
+ }
+@keyframes customAni {
+   0% {
+    transform: translate(0);
+   }
+ 
+   20% {
+    transform: translate(2px, -2px);
+   }
+ 
+   40% {
+    transform: translate(2px, 2px);
+   }
+ 
+   60% {
+    transform: translate(-2px, 2px);
+   }
+ 
+   80% {
+    transform: translate(-2px, -2px);
+   }
+ 
+   100% {
+    transform: translate(0);
+   }
+ }
+ .text-EAE7B1{
+   color: #EAE7B1;
+ }
+ .text-EEE9DA{
+   color: #EEE9DA;
+ }
+.text-3C6255{
+   color: #3C6255;
+}
+
+/**==============================================
+ *                Accordoin
+ *  
+ *  
+ *  
+ *  
+ *=============================================**/
+ .ant-collapse-expand-icon{
+   position: absolute;
+   left: 0;
+ }
+ .accordion-box{
+   padding: 1rem;
+   border-radius: 8px;
+background: #FAF1E4;
+ }
+ .ant-collapse-item{
+   border-bottom: 0 !important;
+   margin-bottom: 0.5rem !important;
+   background: #EEE9DA;
+   border-radius: 0.5rem;
+ }
+ .ant-collapse-content-box{
+   background: #EEE9DA;
+ }
+ .ant-collapse-content-box p{
+   color: #1C332B;
+ }
  @media only screen and (max-width: 1400px){}
  @media only screen and (max-width: 1200px){}
  @media only screen and (max-width: 1023px){
@@ -334,5 +460,30 @@ line-height: 200%; /* 48px */
    }
    .bg-banner-image{
       margin-top: 2rem;
+   }
+   .after-bg-larg::after{
+      width: 90%;
+      height: 100%;
+   }
+   .after-bg-small {
+      width: 18rem;
+      height: 18rem;
+   }
+   .after-bg-larg{
+      width: 22rem;
+      height: 22rem;
+   }
+   .ant-collapse-content-box p{
+      font-size: 14px;
+   }
+ }
+ @media only screen and (max-width: 380px){
+   .after-bg-small {
+      width: 16rem;
+      height: 16rem;
+   }
+   .after-bg-larg{
+      width: 18rem;
+      height: 18rem;
    }
  }
