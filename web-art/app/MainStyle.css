@@ -410,9 +410,126 @@ background: #FAF1E4;
  .ant-collapse-content-box p{
    color: #1C332B;
  }
+ /**=======================
+  *     Team
+  *  
+  *  
+  *========================**/
+  .team-bg{
+   background: #3C6255;
+   width: 100%;
+   position: relative;
+   z-index: 1;
+   overflow: hidden;
+  }
+  .cards-box{
+   min-height: 20rem;
+  }
+  .team-bg::after{
+   content: '';
+   position: absolute;
+   left: 0;
+   top: 0;
+   background: url(../public/asset/image/team-affter.svg);
+   background-repeat: no-repeat;
+   background-size: auto;
+   width: 25%;
+   height: 100%;
+   z-index: 2;
+   animation: ripple 3s infinite ease-in-out;
+  }
+  .team-card{
+   position: relative;
+   overflow: hidden;
+   transition: ease-in-out 0.3s all;
+  }
+  .bg-social{
+   background: #45695C;
+  }
+  .transfor-cs{
+   transform: translate(-50%,-50%);
+  }
+  .user-info{
+   display: none;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   width: 100%;
+   height: 100%;
+   z-index: 3;
+   transition: ease-in-out 0.3s all;
+   padding: 2rem;
+  }
+  .team-card:hover{
+   cursor: pointer;
+  }
+  .team-card:hover .user-info{
+   display: flex;
+   margin: auto;
+  }
+  .team-card:hover.team-card::after{
+   display: block;
+   transition: ease-in-out 0.3s all;
+  }
+  .team-card::after{
+   content: "";
+   border-radius: 8px;
+   background: rgba(234, 231, 177, 0.90);
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   top: 0;
+   left: 0;
+   display: none;
+  }
+  @keyframes ripple{
+   0%{
+     transform: translate(0 ,0);
+   }
+   
+   50%{
+     transform: translate(5px ,25px);
+   }
+   
+   100%{
+     transform: scale(15px,25px);
+   }
+ }
+ @keyframes ripple-i{
+   0%{
+     transform: translate(0 ,0);
+   }
+   
+   50%{
+     transform: translate(-5px ,-25px);
+   }
+   
+   100%{
+     transform: scale(-15px,-25px);
+   }
+ }
+ 
+  .team-bg::before{
+   content: '';
+   position: absolute;
+   right: 0;
+   top: 0;
+   background: url(../public/asset/image/team-befor.svg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: contain;
+   width: 11%;
+   height: 100%;
+   z-index: 2;
+   animation: ripple-i 3s infinite ease-in-out;
+  }
+
  @media only screen and (max-width: 1400px){}
  @media only screen and (max-width: 1200px){}
  @media only screen and (max-width: 1023px){
+   .team-bg::after{
+      background-size: cover;
+   }
    .mouse-motion{
       bottom: 4%;
    }
@@ -475,6 +592,10 @@ background: #FAF1E4;
    }
    .ant-collapse-content-box p{
       font-size: 14px;
+   }
+   
+   .team-bg::before{
+      display: none;
    }
  }
  @media only screen and (max-width: 380px){

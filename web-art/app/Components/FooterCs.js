@@ -10,10 +10,10 @@ function FooterCs() {
   return (
     <footer className="m-auto mt-40">
      <div className="container px-4 md:px-0 max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl m-auto">
-        <div className="footer-logo mt-24">
-            <Image src={FooterLogo} />
+        <div className="footer-logo mt-24  ">
+            <Image src={FooterLogo} alt="FooterLogo" className="mx-auto lg:mx-0" />
         </div>
-      <div className="flex justify-between items-center py-8">
+      <div className="flex flex-col md:flex-row justify-between items-center py-8">
         <div className="basis-1/3 flex ">
           <ul className="px-4 flex md:flex-col ">
             <li className="py-2">
@@ -49,7 +49,7 @@ function FooterCs() {
             </Link>
           </div>
         </div>
-        <div className="basis-1/3 flex justify-end">
+        <div className="basis-1/3 flex justify-end mt-8 lg:mt-0">
             <div className="w-40 h-40 bg-slate-500"></div>
         </div>
       </div>
