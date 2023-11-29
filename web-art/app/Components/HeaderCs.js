@@ -43,7 +43,7 @@ const HeaderCs = () => {
   const navStyle = {
     width: '100%',
     position: 'fixed',
-    zIndex: 10,
+    zIndex: 12,
     transition:' .3s ',
     opacity: scrollPosition > 80 && scrollPosition < 400 ? 0 :1 ,
     transform:scrollPosition > 80 && scrollPosition < 400 ? 'translateY(-5rem)' :'translateY(0)' ,
