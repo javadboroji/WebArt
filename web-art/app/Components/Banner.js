@@ -1,5 +1,6 @@
 import React from "react";
-
+import bannerImage from "@/public/asset/image/banner-88.svg"
+import Image from "next/image";
 function Banner() {
   return (
     <div className="banner-bg">
@@ -38,10 +39,14 @@ function Banner() {
               تکنولوژی همراهی کنیم.
             </span>
           </div>
-          <div >
-            <div className="bg-banner-image">
-
-            </div>
+          
+            <div className="bg-banner-image flex justify-center lg:justify-end">
+                <div className="circle-larg">
+                    <div className="circle-small">
+                        <Image src={bannerImage} className="img-banner-style"/>
+                    </div>
+                </div>
+           
           </div>
         </div>
       </div>
