@@ -631,12 +631,90 @@ background: #FAF1E4;
       z-index: 2;
       right: 75%;
    }
+   .pakages-card-header .circle{
+      width: 7.5rem;
+      height: 7.5rem;
+      border-radius: 80px;
+      background: #61876E;
+      box-shadow: 1px 2px 8px 0px rgba(0, 0, 0, 0.10);
+      transition: ease-in-out 0.3s all;
+   }
+
+
+   /**==============================================
+    *                Pakages
+    *  
+    *  
+    *  
+    *  
+    *=============================================**/
+    .pakages-card-header{
+      background: #A6BB8D;
+      position: relative;
+    }
+    .pakages-card-header::after{
+      content: "";
+      position: absolute;
+      right: 50%;
+      top: 5%;
+      background: #EEE9DA;
+      width: 25.5rem;
+      height: 15.5rem;
+      border-radius: 50%;
+      z-index: 2;
+
+    }
+    .pakages-card-header::before{
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 62%;
+      background: #EEE9DA;
+      width: 12.5rem;
+      height: 9.5rem;
+      border-radius: 50%;
+      z-index: 2;
+      transition: ease-in-out 0.3s all;
+
+    }
+    .package-card{
+      border-radius: 8px;
+      border: 1px solid #A9A9A9;
+      background: #EEE9DA;
+      box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.10);
+      position: relative;
+      overflow: hidden;
+      transition: ease-in-out 0.3s all;
+    }
+    .before-pakage-item::before{
+      content: "";
+      width: 1rem;
+      height: 1rem;
+      background: #61876E;
+      border-radius: 50%;
+      position: absolute;
+      right: 1rem;
+    }
+    .package-card:hover{
+      cursor: pointer;
+      transform: scale(1.1);
+      transition: ease-in-out 0.3s all;
+    }
+    .package-card:hover .pakages-card-header .circle ,.package-card:hover .pakages-card-header{
+      background: #3C6255;
+      transition: ease-in-out 0.3s all;
+    }
  @media only screen and (max-width: 1400px){
    
  }
  @media only screen and (max-width: 1200px){}
  @media only screen and (max-width: 1023px){
+   .pakages-card-header::before{
+      width: 18.5rem;
+      height: 8.5rem;
+      left: 50%;
 
+   }
    .team-bg::after{
       background-size: cover;
    }
@@ -802,4 +880,7 @@ background: #FAF1E4;
 }
 .text-40513B{
    color: #40513B;
+}
+.text-EEE9DA{
+   color: #EEE9DA;
 }

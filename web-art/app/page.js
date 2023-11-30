@@ -8,6 +8,7 @@ import FooterCs from './Components/FooterCs'
 import Accordion from './Components/Accordion'
 import TeamOur from './Components/TeamOur'
 import OurTools from './Components/OurTools'
+import Packages from './Components/Packages'
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between ">
@@ -16,6 +17,7 @@ export default function Home() {
       <AffterBanner />
       <OurTools />
       <TeamOur />
+      <Packages />
       <Accordion />
       <Contact />
       <FooterCs />
