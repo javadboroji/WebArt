@@ -9,12 +9,14 @@ import Accordion from './Components/Accordion'
 import TeamOur from './Components/TeamOur'
 import OurTools from './Components/OurTools'
 import Packages from './Components/Packages'
+import Samples from './Components/Samples'
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between ">
       <HeaderCs />
       <Banner />
       <AffterBanner />
+      <Samples />
       <OurTools />
       <TeamOur />
       <Packages />
