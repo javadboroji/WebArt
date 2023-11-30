@@ -36,16 +36,16 @@ function FooterCs() {
           </div>
           <div className="flex mt-6 justify-center">
             <Link href="/" className="mx-4   trans-top-left">
-              <Image src={social} />
+              <Image src={social} alt="social" />
             </Link>
             <Link href="/" className="mx-4 trans-top-left">
-              <Image src={social1} />
+              <Image src={social1} alt="social" />
             </Link>
             <Link href="/" className="mx-4 trans-top-left">
-              <Image src={social2} />
+              <Image src={social2} alt="social" />
             </Link>
             <Link href="/" className="mx-4 trans-top-left">
-              <Image src={social3} />
+              <Image src={social3} alt="social" />
             </Link>
           </div>
         </div>

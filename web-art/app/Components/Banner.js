@@ -43,7 +43,7 @@ function Banner() {
             <div className="bg-banner-image flex justify-center lg:justify-end">
                 <div className="circle-larg">
                     <div className="circle-small">
-                        <Image src={bannerImage} className="img-banner-style"/>
+                        <Image src={bannerImage} alt="bannerImage" className="img-banner-style"/>
                     </div>
                 </div>
            

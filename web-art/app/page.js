@@ -7,12 +7,14 @@ import AffterBanner from './Components/AffterBanner'
 import FooterCs from './Components/FooterCs'
 import Accordion from './Components/Accordion'
 import TeamOur from './Components/TeamOur'
+import OurTools from './Components/OurTools'
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between ">
       <HeaderCs />
       <Banner />
       <AffterBanner />
+      <OurTools />
       <TeamOur />
       <Accordion />
       <Contact />

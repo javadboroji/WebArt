@@ -28,22 +28,22 @@ function Contact() {
                         <div className='flex  '>
                             <div className='bg-social rounded-full w-8 h-8 relative z-10 mx-2 relative'>
                                 <Link href="/" className='absolute   trans-top-left'>
-                                    <Image src={social}/>
+                                    <Image src={social} alt='social'/>
                                 </Link>
                             </div>
                             <div className='bg-social rounded-full w-8 h-8 relative z-10 mx-2 relative'>
                             <Link href="/"  className='absolute trans-top-left'>
-                                    <Image src={social1}/>
+                                    <Image src={social1} alt='social'/>
                                 </Link>
                             </div>
                             <div className='bg-social rounded-full w-8 h-8 relative z-10 mx-2 relative'>
                             <Link href="/"  className='absolute trans-top-left'>
-                                    <Image src={social2}/>
+                                    <Image src={social2} alt='social'/>
                                 </Link>
                             </div>
                             <div className='bg-social rounded-full w-8 h-8 relative z-10 mx-2 relative'>
                             <Link href="/"  className='absolute trans-top-left'>
-                                    <Image src={social3}/>
+                                    <Image src={social3} alt='social'/>
                                 </Link>
                             </div>
                         </div>

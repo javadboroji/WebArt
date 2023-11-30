@@ -386,15 +386,7 @@ line-height: 200%; /* 48px */
     transform: translate(0);
    }
  }
- .text-EAE7B1{
-   color: #EAE7B1;
- }
- .text-EEE9DA{
-   color: #EEE9DA;
- }
-.text-3C6255{
-   color: #3C6255;
-}
+
 
 /**==============================================
  *                Accordoin
@@ -537,8 +529,111 @@ background: #FAF1E4;
    z-index: 2;
    animation: ripple-i 3s infinite ease-in-out;
   }
+  
 
- @media only screen and (max-width: 1400px){}
+
+  /**==============================================
+   *                OurTeam
+   *  
+   *  
+   *  
+   *  
+   *=============================================**/
+   .tools-circle{
+      width: 26rem;
+      height: 26rem;
+      border-radius: 50%;
+      background: transparent;
+      border: dotted;
+      position: relative;
+      animation: rotate 30s linear infinite;
+   }
+   @keyframes rotate {
+      0% {
+          transform: rotate(0)
+      }
+  
+      100% {
+          transform: rotate(360deg);
+      }
+  }
+   .tools-circle-logo{
+      border-radius: 500px;
+      background: #EEE9DA;
+      box-shadow: 3px 3px 32px 3px rgba(0, 0, 0, 0.10);
+      width: 21rem;
+      height: 21rem;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+   }
+   .tools-circle-logo img{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+   }
+   .tools-circle-animation{
+      background: #A6BB8D;
+      border-radius: 50%;
+      
+   }
+   .tools-circle-animation img{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+   }
+   .tools-circle-animation.c{
+      width: 6.2rem;
+      height: 6.2rem;
+      border: none;
+      position: absolute;
+      top: 0%;
+      z-index: 2;
+      left: 75%;
+   }
+   .tools-circle-animation.react{
+      width: 5.5rem;
+      height: 5.5rem;
+      border: none;
+      position: absolute;
+      top: 55%;
+      z-index: 2;
+      left: 90%;
+   }
+   .tools-circle-animation.figma{
+      width: 5.5rem;
+      height: 5.5rem;
+      border: none;
+      position: absolute;
+      top: 90%;
+      z-index: 2;
+      left: 45%;
+   }
+   .tools-circle-animation.angular{
+      width: 4rem;
+      height: 4rem;
+      border: none;
+      position: absolute;
+      top: 55%;
+      z-index: 2;
+      right: 90%;
+   }
+   .tools-circle-animation.next{
+      width: 6rem;
+      height: 6rem;
+      border: none;
+      position: absolute;
+      top: 0%;
+      z-index: 2;
+      right: 75%;
+   }
+ @media only screen and (max-width: 1400px){
+   
+ }
  @media only screen and (max-width: 1200px){}
  @media only screen and (max-width: 1023px){
 
@@ -619,6 +714,69 @@ background: #FAF1E4;
    .team-bg::before{
       display: none;
    }
+   .tools-circle-animation.c{
+      width: 4.2rem;
+      height: 4.2rem;
+      
+   }
+   .tools-circle-animation.react{
+      width: 3.5rem;
+      height: 3.5rem;
+
+   }
+   .tools-circle-animation.figma{
+      width: 3.5rem;
+      height: 3.5rem;
+   }
+   .tools-circle-animation.angular{
+      width: 3rem;
+      height: 3rem;
+   }
+   .tools-circle-animation.next{
+      width: 5rem;
+      height: 5rem;
+  
+   }
+   .tools-circle-logo{
+      width: 18rem;
+      height: 18rem;
+   }
+   .tools-circle{
+      width: 21rem;
+      height: 21rem;
+   }
+ }
+ @media only screen and (max-width: 500px){
+   .tools-circle-logo{
+      width: 15rem;
+      height: 15rem;
+   }
+   .tools-circle{
+      width: 18rem;
+      height: 18rem;
+   }
+   .tools-circle-animation{
+      transform: scale(0.8);
+   }
+   .tools-circle-logo img{
+      width: 80%;
+   }
+ }
+ @media only screen and (max-width: 440px){
+   .tools-circle-logo img{
+      width: 60%;
+   }
+   .tools-circle-animation{
+      transform: scale(0.6);
+   }
+   .tools-circle-logo{
+      width: 12rem;
+      height: 12rem;
+   }
+   .tools-circle{
+      width: 15rem;
+      height: 15rem;
+   }
  }
  @media only screen and (max-width: 380px){
    .after-bg-small {
@@ -633,3 +791,15 @@ background: #FAF1E4;
       height: 110%;
    }
  }
+ .text-EAE7B1{
+   color: #EAE7B1;
+ }
+ .text-EEE9DA{
+   color: #EEE9DA;
+ }
+.text-3C6255{
+   color: #3C6255;
+}
+.text-40513B{
+   color: #40513B;
+}
