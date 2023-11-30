@@ -13,7 +13,7 @@ function TeamOur() {
         <h3 className="text-3xl font-semibold py-8 text-slate-100 text-center lg:text-start"> تیم ما</h3>
         <div className="flex  flex-wrap cards-box relative z-10 justify-center lg:justify-start">
           <div className="team-card lg:w-52 sm:w-1/3 w-10/12 lg:h-52 mx-2 mb-8  relative  rounded-lg xl:mx-8 lg:mx-4">
-            <Image src={userMan} Width={"100%"} alt="userMan" />
+            <Image src={userMan} width={"100%"} alt="userMan" />
             <div className="user-info flex flex-col items-center absolute ">
               <span className="name font-semibold text-base text-3C6255">
                 {" "}
@@ -52,7 +52,7 @@ function TeamOur() {
             </div>
           </div>
           <div className="team-card lg:w-52 lg:h-52 sm:w-1/3 w-10/12 mx-2 mb-8 sm:mb-0  relative  rounded-lg xl:mx-8  lg:mx-4 mt-auto">
-            <Image src={userMan} Width={"100%"} alt="userMan" />
+            <Image src={userMan} width={"100%"} alt="userMan" />
             <div className="user-info flex flex-col items-center absolute ">
               <span className="name font-semibold text-base text-3C6255">
                 {" "}
@@ -91,7 +91,7 @@ function TeamOur() {
             </div>
           </div>
           <div className="team-card lg:w-52 lg:h-52 sm:w-1/3 w-10/12 mx-2 lg:mx-0 relative  rounded-lg xl:mx-8 lg:mx-4">
-            <Image src={userMan} Width={"100%"} alt="userMan" />
+            <Image src={userMan} width={"100%"} alt="userMan" />
             <div className="user-info flex flex-col items-center absolute ">
               <span className="name font-semibold text-base text-3C6255">
                 {" "}
@@ -130,7 +130,7 @@ function TeamOur() {
             </div>
           </div>
           <div className="team-card lg:w-52 lg:h-52 sm:w-1/3 w-10/12 mx-2 mt-8 relative  rounded-lg xl:mx-8 lg:mt-auto lg:mx-4">
-            <Image src={userImage} Width={"100%"} alt="userImage" />
+            <Image src={userImage} width={"100%"} alt="userImage" />
             <div className="user-info flex flex-col items-center absolute ">
               <span className="name font-semibold text-base text-3C6255">
                 {" "}

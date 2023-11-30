@@ -716,6 +716,8 @@ background: #FAF1E4;
       width: 100%;
       padding-top: 50px;
       padding-bottom: 50px;
+      padding-bottom:  8rem;
+      padding-top: 4rem;
     }
     
     .swiper-slide {
@@ -726,8 +728,13 @@ background: #FAF1E4;
       background: #fff;
       overflow: hidden;
       position: relative;
+      border-radius: 42px 8px;
+      border: 1px solid #A9A9A9;
+      box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.10);
     }
-    
+    .swiper-slide-active{
+      transform: scale(1.1) !important;
+    }
     .swiper-slide img {
       display: block;
       height: 100%;
